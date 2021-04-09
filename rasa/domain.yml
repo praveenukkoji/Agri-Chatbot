@@ -1,0 +1,31 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- shortform
+- fullform
+- greet
+- goodbye
+entities:
+- full_form
+- short_form
+slots:
+  short_form:
+    type: text
+    influence_conversation: false
+  full_form:
+    type: text
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hey! what can I do for you ?
+  utter_goodbye:
+  - text: Bye
+actions:
+- action_default
+- action_ff_get_info
+- action_reset
+- action_sf_get_info
+- utter_goodbye
+- utter_greet

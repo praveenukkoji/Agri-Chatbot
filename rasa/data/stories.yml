@@ -1,0 +1,308 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: shortform
+    entities:
+    - short_form: pmk
+  - slot_was_set:
+    - short_form: pmk
+  - action: action_sf_get_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fullform
+    entities:
+    - full_form: kisan yojana
+  - slot_was_set:
+    - full_form: kisan yojana
+  - action: action_ff_get_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: shortform
+    entities:
+    - short_form: SFAC
+  - slot_was_set:
+    - short_form: SFAC
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: SFAC
+  - intent: shortform
+    entities:
+    - short_form: pmk
+  - slot_was_set:
+    - short_form: pmk
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: pmk
+  - intent: shortform
+    entities:
+    - short_form: sfac
+  - slot_was_set:
+    - short_form: sfac
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: sfac
+  - intent: fullform
+    entities:
+    - full_form: Agriculture Export Policy
+  - slot_was_set:
+    - full_form: Agriculture Export Policy
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Agriculture Export Policy
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: shortform
+    entities:
+    - short_form: sfac
+  - slot_was_set:
+    - short_form: sfac
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: sfac
+  - intent: shortform
+    entities:
+    - short_form: sfac
+  - slot_was_set:
+    - short_form: sfac
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: sfac
+  - intent: shortform
+    entities:
+    - short_form: pmk
+  - slot_was_set:
+    - short_form: pmk
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: pmk
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: shortform
+    entities:
+    - short_form: negpa
+  - slot_was_set:
+    - short_form: negpa
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: negpa
+  - intent: shortform
+    entities:
+    - short_form: SFAC
+  - slot_was_set:
+    - short_form: SFAC
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: SFAC
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fullform
+    entities:
+    - full_form: Green Revolution
+  - slot_was_set:
+    - full_form: Green Revolution
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Green Revolution
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fullform
+    entities:
+    - full_form: Green Revolution
+  - slot_was_set:
+    - full_form: Green Revolution
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Green Revolution
+  - intent: fullform
+    entities:
+    - full_form: Green Revolution
+  - slot_was_set:
+    - full_form: Green Revolution
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Green Revolution
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fullform
+    entities:
+    - full_form: National Agriculture Market
+  - slot_was_set:
+    - full_form: National Agriculture Market
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: National Agriculture Market
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fullform
+    entities:
+    - full_form: National Agriculture Market
+  - slot_was_set:
+    - full_form: National Agriculture Market
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: National Agriculture Market
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: shortform
+    entities:
+    - short_form: SFAC
+  - slot_was_set:
+    - short_form: SFAC
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: SFAC
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fullform
+    entities:
+    - full_form: Pradhan Mantri Fasal Bima Yojana
+  - slot_was_set:
+    - full_form: Pradhan Mantri Fasal Bima Yojana
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Pradhan Mantri Fasal Bima Yojana
+  - intent: fullform
+    entities:
+    - full_form: Green Rev
+  - slot_was_set:
+    - full_form: Green Rev
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Green Rev
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fullform
+    entities:
+    - full_form: Contract Farming Law
+  - slot_was_set:
+    - full_form: Contract Farming Law
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Contract Farming Law
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+    entities:
+    - greet: yo
+  - action: utter_greet
+  - intent: fullform
+    entities:
+    - full_form: Horticulture Mission for North East And Himalayan States
+  - slot_was_set:
+    - full_form: Horticulture Mission for North East And Himalayan States
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Horticulture Mission for North East And Himalayan States
+  - intent: fullform
+    entities:
+    - full_form: Horticulture Mission for
+    - full_form: East And Himalayan
+  - slot_was_set:
+    - full_form: East And Himalayan
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: East And Himalayan
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fullform
+    entities:
+    - full_form: Agriculture Export Policy
+  - slot_was_set:
+    - full_form: Agriculture Export Policy
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Agriculture Export Policy
+  - intent: fullform
+    entities:
+    - full_form: Digital Initiatives by the Indian government
+  - slot_was_set:
+    - full_form: Digital Initiatives by the Indian government
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Digital Initiatives by the Indian government
+  - intent: fullform
+    entities:
+    - full_form: Agriculture Export Policy
+  - slot_was_set:
+    - full_form: Agriculture Export Policy
+  - action: action_ff_get_info
+  - slot_was_set:
+    - full_form: Agriculture Export Policy
+  - intent: shortform
+    entities:
+    - short_form: SFAC
+  - slot_was_set:
+    - short_form: SFAC
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: SFAC
+  - intent: shortform
+    entities:
+    - short_form: SFR
+  - slot_was_set:
+    - short_form: SFR
+  - action: action_sf_get_info
+  - slot_was_set:
+    - short_form: SFR
+  - action: utter_goodbye

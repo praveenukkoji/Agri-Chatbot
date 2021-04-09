@@ -1,0 +1,60 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - moin
+    - hey there
+    - hey dude
+    - hi there
+    - [yo](greet)
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: shortform
+  examples: |
+    - what is [PMK](short_form) ?
+    - tell me about [PMK](short_form) scheme
+    - what is [pmk](short_form) ?
+    - tell me about [pmk](short_form)
+    - [pmk](short_form)
+    - [PMK](short_form)
+    - [SFAC](short_form)
+    - tel me about [sfac](short_form)
+    - what is [sfac](short_form) ?
+    - tell me about [sfac](short_form)
+    - what is [pmk](short_form)
+    - what is [negpa](short_form)
+    - tell me something about [SFAC](short_form) ?
+    - [SFAC](short_form)
+    - [SFR](short_form)
+- intent: fullform
+  examples: |
+    - [pradhan mantri kisan yojana](full_form)
+    - tell me about [pradhan mantri kisan yojana](full_form)
+    - [kisan yojana](full_form)
+    - [Agriculture Export Policy](full_form)
+    - tell me about [Green Revolution](full_form) ?
+    - what is [Green Revolution](full_form)
+    - [Green Revolution](full_form) ?
+    - tell me about [National Agriculture Market](full_form)?
+    - tell me about [National Agriculture Market](full_form) ?
+    - [Pradhan Mantri Fasal Bima Yojana](full_form)
+    - tell me about [Green Rev](full_form) ?
+    - [Contract Farming Law](full_form) info ?
+    - what is [Horticulture Mission for North East And Himalayan States](full_form) ?
+    - what is [Horticulture Mission for](full_form) North [East And Himalayan](full_form) States?
+    - [Agriculture Export Policy](full_form), 2018
+    - what is [Digital Initiatives by the Indian government](full_form)?
+    - [Agriculture Export Policy](full_form)
